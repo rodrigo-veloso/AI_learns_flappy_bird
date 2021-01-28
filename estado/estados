@@ -1,0 +1,27 @@
+1 s = (int(abs(birds[0].y -pipes_see[-1].bottom)/N),int(abs(birds[0].x-(pipes_see[-1].x+52))/2),int(abs(birds[0].y -pipes_see[-1].height)/N),int(birds[0].vel+9))
+
+2 s = (int(abs(birds[0].y -pipes_see[-1].bottom)/N),int(abs(birds[0].x-(pipes_see[-1].x+52))/2),int(abs(birds[0].y -pipes_see[-1].height)/N))
+
+3 s = (int(abs(birds[0].y -pipes_see[-1].bottom)/N),int(abs(birds[0].x-(pipes_see[-1].x+52))/2),int(birds[0].vel+9))
+
+4 s = (int(abs(birds[0].y -(pipes_see[-1].bottom+pipes_see[-1].height)/2)/N),int(abs(birds[0].x-(pipes_see[-1].x+52))/2),int(birds[0].vel+9))
+
+5 s = (int(abs(birds[0].y -pipes_see[-1].bottom)/N),int(abs(birds[0].y -pipes_see[-1].height)/N),int(birds[0].vel+9))
+
+6 s = (int(abs(birds[0].y -pipes_see[-1].bottom)/N),int(abs(birds[0].y -pipes_see[-1].height)/N),int(birds[0].y/N))
+
+7 s = (int(abs(birds[0].y -pipes_see[-1].bottom)/N),int(abs(birds[0].x-(pipes_see[-1].x+52))/2),int((birds[0].vel+9)),above_bottom,above_top)
+
+8 s_ = (int(abs(birds[0].y -pipes_see[-1].bottom)/N),int(abs(birds[0].x-(pipes_see[-1].x+52))/2),int(abs(birds[0].y -pipes_see[-1].height)/N),int(birds[0].vel+9),above_bottom,above_top)
+
+9 s_ = (int(abs(birds[0].y -pipes_see[-1].bottom)/N),int(abs(birds[0].x-(pipes_see[-1].x+52))/2),int(abs(birds[0].y -pipes_see[-1].height)/N),int(birds[0].vel+9),above_bottom,above_top)
+
+10 s_ = (int(abs(birds[0].y -(pipes_see[-1].bottom+pipes_see[-1].bottom)/2)/N),int(birds[0].vel+9),above_bottom,above_top)
+
+11 s = (int(abs(birds[0].y -pipes_see[-1].bottom)/N),int(birds[0].vel+9),above_bottom,above_top)
+
+12 s = (int(abs(birds[0].y -pipes_see[-1].bottom)/N),int(birds[0].vel+9))
+
+13 s = (int(birds[0].y/N),int(pipes_see[-1].bottom/N),int(pipes_see[-1].height/N))
+
+

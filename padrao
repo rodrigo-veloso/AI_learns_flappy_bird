@@ -1,0 +1,6 @@
+lambda = 0.9
+mu = 0.7
+epsilon = 0.5
+frames = 2
+
+estado: s = (int(abs(birds[0].y -pipes_see[-1].bottom)/N),int(abs(birds[0].x-(pipes_see[-1].x+52))/2),int(abs(birds[0].y -pipes_see[-1].height)/N),int(birds[0].vel+9))

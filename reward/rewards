@@ -1,0 +1,204 @@
+1 --------------------------
+
+def reward_function(a,score,collide,collide_out,birds,pipes,passed,j,above_top,above_bottom):
+
+	r = 0
+	#if passed:
+		#r +=1000
+	if collide:
+		#if pipes[-1].x < 280:
+		r -= 1000
+		#else:
+			#r -= (abs((birds[0].y - pipes[-1].height)**3) + abs((birds[0].y - pipes[-1].bottom)**3))/1000000 
+	if collide_out:
+		r -= 1000
+	if above_top == 1 and above_bottom == 0:
+	#	if abs(birds[0].y -(pipes[-1].bottom + pipes[-1].height)/2) < 40:
+		r +=1
+		#r += (800 - (abs(birds[0].y - pipes[-1].height) + abs(birds[0].y - pipes[-1].bottom))/2.0)/200
+		#print(10 + j*1.2)
+	#r += 1
+	#print(r)
+	return r
+
+2 -------------------------
+
+def reward_function(a,score,collide,collide_out,birds,pipes,passed,j,above_top,above_bottom):
+
+	r = 0
+
+	if collide:
+		r -= 1000
+
+	if collide_out:
+		r -= 1000
+
+	return r
+
+3 -----------------------------
+
+def reward_function(a,score,collide,collide_out,birds,pipes,passed,j,above_top,above_bottom):
+
+	r = 0
+	if collide:
+		r -= 1000
+	if collide_out:
+		r -= 1000
+	if above_top == 1 and above_bottom == 0:
+		if abs(birds[0].y -(pipes[-1].bottom + pipes[-1].height)/2) < 40:
+			r +=1
+	return r
+
+4 ------------------------------------
+
+def reward_function(a,score,collide,collide_out,birds,pipes,passed,j,above_top,above_bottom):
+
+	r = 0
+	if collide:
+		r -= 1000
+	if collide_out:
+		r -= 1000
+	r += 1
+	return r
+
+5 ----------------------------------------
+
+def reward_function(a,score,collide,collide_out,birds,pipes,passed,j,above_top,above_bottom):
+
+	r = 0
+	if collide:
+		r -= 1000
+	if collide_out:
+		r -= 1000
+	if above_top == 1 and above_bottom == 0:
+		if abs(birds[0].y -(pipes[-1].bottom + pipes[-1].height)/2) < 40:
+			r +=10
+
+	return r
+
+6 -----------------------------
+
+def reward_function(a,score,collide,collide_out,birds,pipes,passed,j,above_top,above_bottom):
+
+	r = 0
+	if collide:
+		r -= 1000
+	if collide_out:
+		r -= 1000
+	if above_top == 1 and above_bottom == 0:
+		if abs(birds[0].y -(pipes[-1].bottom + pipes[-1].height)/2) < 40:
+			r +=100
+
+	return r
+
+7 -----------------------------
+
+def reward_function(a,score,collide,collide_out,birds,pipes,passed,j,above_top,above_bottom):
+
+	r = 0
+	if collide:
+		r -= 1000
+	if collide_out:
+		r -= 1000
+	if above_top == 1 and above_bottom == 0:
+		if abs(birds[0].y -(pipes[-1].bottom + pipes[-1].height)/2) < 40:
+			r +=1000
+
+	return r
+
+8 -----------------------------
+
+def reward_function(a,score,collide,collide_out,birds,pipes,passed,j,above_top,above_bottom):
+
+	r = 0
+	if collide:
+		r -= 10000
+	if collide_out:
+		r -= 10000
+	if above_top == 1 and above_bottom == 0:
+		if abs(birds[0].y -(pipes[-1].bottom + pipes[-1].height)/2) < 40:
+			r +=1
+
+	return r
+
+9 ----------------------------------------
+
+def reward_function(a,score,collide,collide_out,birds,pipes,passed,j,above_top,above_bottom):
+
+	r = 0
+	if collide:
+		r -= 1000
+	if collide_out:
+		r -= 1000
+	if above_top == 1 and above_bottom == 0:
+		if abs(birds[0].y -(pipes[-1].bottom + pipes[-1].height)/2) < 30:
+			r +=10
+
+	return r
+
+10 ----------------------------------------
+
+def reward_function(a,score,collide,collide_out,birds,pipes,passed,j,above_top,above_bottom):
+
+	r = 0
+	if collide:
+		r -= 1000
+	if collide_out:
+		r -= 1000
+	if above_top == 1 and above_bottom == 0:
+		if abs(birds[0].y -(pipes[-1].bottom + pipes[-1].height)/2) < 20:
+			r +=10
+
+	return r
+
+11 ----------------------------------------
+
+def reward_function(a,score,collide,collide_out,birds,pipes,passed,j,above_top,above_bottom):
+
+	r = 0
+	if collide:
+		r -= 1000
+	if collide_out:
+		r -= 1000
+	if above_top == 1 and above_bottom == 0:
+		if abs(birds[0].y -(pipes[-1].bottom + pipes[-1].height)/2) < 10:
+			r +=10
+
+	return r
+
+12 ----------------------------------------
+
+def reward_function(a,score,collide,collide_out,birds,pipes,passed,j,above_top,above_bottom):
+
+	r = 0
+	if collide:
+		r -= 1000
+	if collide_out:
+		r -= 1000
+	if above_top == 1 and above_bottom == 0:
+		if abs(birds[0].y -(pipes[-1].bottom + pipes[-1].height)/2) < 50:
+			r +=10
+
+	return r
+
+13 -------------------------------------
+
+r = 0
+	if collide:
+		r -= 1000
+	if collide_out:
+		r -= 1000
+	if above_center == 1 and a == 1:
+		r += 1
+	if above_center == 0 and a == 0:
+		r += 1
+	return r
+
+14 -------------------------------------
+
+r = 0
+
+	if passed == 0:
+		r = 1
+
+	return r
